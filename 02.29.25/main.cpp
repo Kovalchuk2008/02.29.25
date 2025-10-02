@@ -43,12 +43,12 @@ void Elevator::Call()
 	cout << "Enter your current position:  = " << position << endl;
 	if (!OnOff)
 	{
-		cout << "Elevator on: ";
+		cout << "Elevator on";
 		return;
 	}
 	if (Floor < groundFloor && Floor > topFloor)
 	{
-		cout << "There is no floor: ";
+		cout << "There is no floor";
 	}
 	else
 	{
