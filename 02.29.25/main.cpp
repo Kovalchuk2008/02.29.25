@@ -39,20 +39,20 @@ void Elevator::Call()
 {
 	cout << "Enter your floor from: " << groundFloor << " to: " << topFloor << endl;
 	cin >> position;
-	int floor;
+	int Floor;
 	cout << "Enter your current position:  = " << position << endl;
 	if (!OnOff)
 	{
 		cout << "Elevator on: ";
 		return;
 	}
-	if (floor < groundFloor && floor > topFloor)
+	if (Floor < groundFloor && Floor > topFloor)
 	{
 		cout << "There is no floor: ";
 	}
 	else
 	{
-		position = floor;
+		position = Floor;
 		cout << "Elevator going on floor" << position << endl;
 	}
 }
